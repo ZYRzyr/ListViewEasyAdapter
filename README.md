@@ -2,6 +2,12 @@
 
 ListViewEasyAdapter is a convenient adapter for ListView,and it is written on the basis of [BaseAdapter](https://developer.android.com/reference/android/widget/BaseAdapter).
 
+[![](https://jitpack.io/v/ZYRzyr/ListViewEasyAdapter.svg)](https://jitpack.io/#ZYRzyr/ListViewEasyAdapter)
+[![GitHub release](https://img.shields.io/github/release/ZYRzyr/ListViewEasyAdapter.svg)](https://github.com/ZYRzyr/ListViewEasyAdapter/releases)
+[![MinSdk](https://img.shields.io/badge/MinSdk-14-green.svg)](https://android-arsenal.com/api?level=14)
+[![Size](https://img.shields.io/badge/Size-4KB-ff69b4.svg)](https://jitpack.io/com/github/ZYRzyr/ListViewEasyAdapter/1.0.0/build.log)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 ## Gradle via JitPack
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
@@ -19,11 +25,11 @@ Then, add the library to your module `build.gradle`:
 
 ```gradle
 dependencies {
-
+    implementation "com.github.ZYRzyr:ListViewEasyAdapter:$latest.version"
 }
 ```
 
-`latest.version` is
+`latest.version` is [![](https://jitpack.io/v/ZYRzyr/ListViewEasyAdapter.svg)](https://jitpack.io/#ZYRzyr/ListViewEasyAdapter)
 
 
 ## Maven
@@ -44,7 +50,7 @@ Add the dependency:
 ```xml
 <dependency>
     <groupId>com.github.ZYRzyr</groupId>
-
+    <artifactId>ListViewEasyAdapter</artifactId>
     <version>latest.version</version>
 </dependency>
 ```
@@ -88,8 +94,11 @@ public class SimpleAdapter extends ListViewEasyAdapter<String, SimpleAdapter.Vie
 ```
 
 **2**.Use `setLayoutRes()` to set your item's `layout.xml`.
+
 **3**.Create a `ViewHolder` to declare your view in your `layout.xml`,and use it at `initViewHolder()`.
+
 **4**.Initialize the views which are in `ViewHolder` at `initView(holder: ViewHolder, view: View)`.
+
 **5**.Do what you want to do at `setupView(holder: ViewHolder, position: Int)`.
 
 ## Issues
